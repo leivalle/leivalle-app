@@ -17,7 +17,7 @@ ReactDOM.render((
     </BrowserRouter>
 ), document.getElementById('root'));
 
-
+fetch('/api/getList').then(x => x.json()).then(x => console.log(x))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
